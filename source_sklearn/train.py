@@ -4,10 +4,11 @@ import argparse
 import os
 import pandas as pd
 
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 
 ## TODO: Import any additional libraries you need to define a model
-
+from sklearn import svm
 
 # Provided model load function
 def model_fn(model_dir):
@@ -56,11 +57,11 @@ if __name__ == '__main__':
     
 
     ## TODO: Define a model 
-    model = None
+    model = svm.SVC(kernel='linear')
     
     
     ## TODO: Train the model
-    
+    model.fit(train_x, train_y)
     
     
     ## --- End of your code  --- ##
