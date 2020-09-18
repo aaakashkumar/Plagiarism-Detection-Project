@@ -9,12 +9,15 @@ In this project, I've built a plagiarism detector that examines a text file and 
 This project will be broken down into three main notebooks:
 
 **Notebook 1: Data Exploration**
+
 This notebook loads in the corpus of plagiarism text data, and explores the existing data features and the data distribution.
 
 **Notebook 2: Feature Engineering**
+
 This notebook cleans and pre-processes the text data. The features for comparing the similarity of an answer text and a source text have been defined here, and similarity features have been extracted. The "good" features have been selected, by analyzing the correlations between different features. Finally, train/test `.csv` files have been created that hold the relevant features and class labels for train/test data points.
 
 **Notebook 3: Train and Deploy Your Model in SageMaker**
+
 In this notebook I've uploaded the train/test feature data to S3. A binary classification model and a training script was defined. The model was trained and deployed using SageMaker, and finally evaluated.
 
 ---
